@@ -20,7 +20,7 @@ export function Banner() {
         autoplay={{ delay: 5500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         navigation
-        className="hero-swiper h-[560px] md:h-[640px]"
+        className="hero-swiper h-[calc(100svh-4rem)] min-h-[560px]"
       >
         {heroSlides.map((slide, index) => (
           <SwiperSlide key={slide.title}>
